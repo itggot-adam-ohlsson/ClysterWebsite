@@ -5,6 +5,7 @@
     <title>Clyster Network - Official Website</title>
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="shortcut icon" href="./img/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   </head>
@@ -32,11 +33,6 @@
             </div>
           </a>
           <a href="#">
-            <div class="nav_link">
-              <h1>Portal</h1>
-            </div>
-          </a>
-          <a href="#">
             <div class="nav_link" id="shop_link">
               <h1>Shop</h1>
             </div>
@@ -45,22 +41,49 @@
       </div>
     </header>
 
+    <div class="autoscroll_down">
+      <div class="autoscroll_down_button">
+        <img src="./img/down_arrow.svg" alt="">
+      </div>
+    </div>
+
+    <div class="copied_ip tada animated">
+      <div class="copied_ip_box">
+        <h1>See you soon!</h1>
+        <h2>Copied: mc.clyster.net</h2>
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+          <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+          <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </svg>
+      </div>
+    </div>
+
     <div class="top_logo">
-      <div class="top_logo_img tada animated"></div>
+      <div class="top_logo_img pulse animated"></div>
     </div>
 
     <div class="top" data-parallax="scroll" data-image-src="./img/top.png">
       <div class="top_content">
-        <h1 class="fadeInLeft animated">Clyster Network</h1>
-        <p class="fadeInLeft animated">Here to deliver the best gaming experience.</p>
-        <p class="fadeInLeft animated">We present to you the funniest games online.</p>
-        <p class="fadeInLeft animated">Brace yourself and go onto mc.clyster.net now!</p>
-        <div class="top_buttons fadeInRight animated">
-          <div class="top_button" id="clyster_button">
-            <h2>CLYSTER</h2>
+        <div class="top_text">
+          <h1 class="fadeInLeft animated">Clyster Network</h1>
+          <p class="fadeInLeft animated">Here to deliver the best gaming experience.</p>
+          <p class="fadeInLeft animated">We present to you the funniest games online.</p>
+          <p class="fadeInLeft animated">Brace yourself and go onto mc.clyster.net now!</p>
+          <div class="top_buttons fadeInRight animated">
+            <div class="top_button" id="clyster_button">
+              <h2>CLYSTER</h2>
+            </div>
+            <div class="top_button" id="top_store">
+              <h2>CLYSTER STORE</h2>
+            </div>
           </div>
-          <div class="top_button" id="top_store">
-            <h2>CLYSTER STORE</h2>
+        </div>
+        <div class="copy_ip tada animated">
+          <div class="ip">
+            <h1>mc.clyster.net</h1>
+          </div>
+          <div class="copy" data-clipboard-text="mc.clyster.net">
+            <h1>Join the adventure!</h1>
           </div>
         </div>
       </div>
@@ -69,12 +92,50 @@
     <div class="content_frame">
       <div id="News">
         <div class="news_content">
-          <h1 class="news_title">News - Available soon</h1>
+          <h1 class="news_title">News - Everything you need to know!</h1>
+          <div class="news_blocks">
+            <div class="news_block news1">
+              <div class="news_block_text">
+                <h1>CLYSTER OPENED</h1>
+                <p>Clyster Network is now officially part of the Minecraft Network community.</p>
+              </div>
+            </div>
+            <div class="news_block news2">
+              <div class="news_block_text">
+                <h1>WEBSITE</h1>
+                <p>The website of Clyster Network is now up and running.</p>
+              </div>
+            </div>
+            <div class="news_block news3">
+              <div class="news_block_text">
+                <h1>HELP</h1>
+                <p>If you have any questions, please contact: support@clyster.net</p>
+              </div>
+            </div>
+            <div class="news_block news4">
+              <div class="news_block_text">
+                <h1>WELCOME</h1>
+                <p>Log in and meet new friends at Clyster Network.</p>
+              </div>
+            </div>
+            <div class="news_block news5">
+              <div class="news_block_text">
+                <h1>MOBILE VERSION</h1>
+                <p>The mobile version of this website will soon be available.</p>
+              </div>
+            </div>
+            <div class="news_block news6">
+              <div class="news_block_text">
+                <h1>BUGS</h1>
+                <p>If you find any bugs, contact: support@clyster.net</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="Clyster">
         <div class="clyster_content">
-          <h1 class="clyster_title">Clyster</h1>
+          <h1 class="clyster_title">Features - What else is needed?</h1>
           <div class="clyster_blocks">
             <div class="clyster_block">
               <i class="material-icons">dns</i>
@@ -105,7 +166,7 @@
       </div>
       <div id="Staff">
         <div class="staff_content">
-          <h1 class="staff_title">Staff</h1>
+          <h1 class="staff_title">Staff - Our staff team</h1>
           <div class="staff_members">
             <div class="staff_member">
               <img src="https://visage.surgeplay.com/bust/aae87ba0-eea3-4768-953b-68355ac3138e" alt="">
@@ -161,7 +222,79 @@
         </div>
       </div>
       <div id="Games">
-
+        <div class="games_content">
+          <h1 class="games_title">Games - All the game modes we offer</h1>
+          <div class="game_servers">
+            <div class="game_server" id="ffa">
+              <img src="./img/ffa.png" alt="ffa">
+              <div class="game_explain">
+                <h1>FFA</h1>
+                <hr>
+                <p>
+                  If you are one of those PvP addicted ones, do not fear to jump down in the no
+                  going back Free For All arena to compete against all the other players on the network.
+                  Use your best strategies and kits to become the most godlike warrior.
+                </p>
+              </div>
+            </div>
+            <div class="game_server" id="faction">
+              <img src="./img/faction.png" alt="faction">
+              <div class="game_explain">
+                <h1>Faction</h1>
+                <hr>
+                <p>
+                  Gather your friends and create a faction, compete against other factions by
+                  finding their hidden base and blow it up. Become the most powerful one on the
+                  server and have a chance to win the honorable prize at the end of the season.
+                </p>
+              </div>
+            </div>
+            <div class="game_server" id="arenapvp">
+              <img src="./img/arenapvp.png" alt="arenapvp">
+              <div class="game_explain">
+                <h1>ArenaPvP</h1>
+                <hr>
+                <p>
+                  Sign yourself up to a queue and be prepared to fight another player in the
+                  numerous of maps to choose from. Practice your battle skills and become the
+                  top 1vs1 warrior across the entire network.
+                </p>
+              </div>
+            </div>
+            <div class="game_server" id="uhc">
+              <img src="./img/uhc.png" alt="uhc">
+              <div class="game_explain">
+                <h1>UHC</h1>
+                <hr>
+                <p>
+                  Along with lots of other player, get thrown into an open world with a border miles away.
+                  Gather resources underground and become the most powerful warrior in the world to be the
+                  last one standing and win but be aware, natural regeneration is off.
+                </p>
+              </div>
+            </div>
+            <div class="game_server">
+              <img src="./img/game_soon.png" alt="comming soon">
+              <div class="game_explain">
+                <h1>Comming soon...</h1>
+                <hr>
+                <p>
+                  Will be available later...
+                </p>
+              </div>
+            </div>
+            <div class="game_server">
+              <img src="./img/game_soon.png" alt="comming soon">
+              <div class="game_explain">
+                <h1>Comming soon...</h1>
+                <hr>
+                <p>
+                  Will be available later...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -170,6 +303,7 @@
     <script src="./js/jquery-3.2.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
+    <script src="./js/clipboard.min.js"></script>
     <script src="./js/functions.js"></script>
   </body>
 </html>

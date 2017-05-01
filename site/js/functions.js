@@ -45,6 +45,30 @@ $("#staff").click(function () {
   $("html, body").animate({ scrollTop: staff_pos - 50 }, 500);
 });
 
+var news_pos = $("#News").offset().top;
+$(".autoscroll_down_button").click(function () {
+  $("html, body").animate({ scrollTop: news_pos - 50 }, 500);
+});
+
 $("#top, .logo").click(function () {
   $("html, body").animate({ scrollTop: 0 }, 500);
+});
+
+// Copy Ip Function
+
+$(".copied_ip").hide();
+$(".copy").click(function () {
+  $(".copied_ip").fadeIn(200, function () {
+    $(".copied_ip").delay(2000).fadeOut(200);
+  });
+});
+
+// Copy To Clipboard Function
+new Clipboard('.copy');
+
+$(".staff_member").mouseover(function () {
+  $(this).find("img").toggleClass("look");
+})
+.mouseout(function () {
+  $(this).find("img").toggleClass("look");
 });
