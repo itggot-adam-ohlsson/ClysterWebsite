@@ -50,7 +50,7 @@ $(".autoscroll_down_button").click(function () {
   $("html, body").animate({ scrollTop: news_pos - 50 }, 500);
 });
 
-$("#top, .logo").click(function () {
+$("#top, .logo, #footer_top").click(function () {
   $("html, body").animate({ scrollTop: 0 }, 500);
 });
 
@@ -65,6 +65,8 @@ $(".copy").click(function () {
 
 // Copy To Clipboard Function
 new Clipboard('.copy');
+
+// Staff Image Rotate Function
 
 $(".staff_member").mouseover(function () {
   $(this).find("img").toggleClass("look");
