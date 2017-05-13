@@ -30,23 +30,23 @@ $(window).scroll(function() {
 
 // Scroll Slide Functions
 
-var clyster_pos = $("#Clyster").offset().top;
-$("#clyster, #clyster_button").click(function () {
+$(".clyster, #clyster_button").click(function () {
+  var clyster_pos = $("#Clyster").offset().top;
   $("html, body").animate({ scrollTop: clyster_pos - 50 }, 500);
 });
 
-var games_pos = $("#Games").offset().top;
-$("#games").click(function () {
+$(".games").click(function () {
+  var games_pos = $("#Games").offset().top;
   $("html, body").animate({ scrollTop: games_pos - 50 }, 500);
 });
 
-var staff_pos = $("#Staff").offset().top;
-$("#staff").click(function () {
+$(".staff").click(function () {
+  var staff_pos = $("#Staff").offset().top;
   $("html, body").animate({ scrollTop: staff_pos - 50 }, 500);
 });
 
-var news_pos = $("#News").offset().top;
 $(".autoscroll_down_button").click(function () {
+  var news_pos = $("#News").offset().top;
   $("html, body").animate({ scrollTop: news_pos - 50 }, 500);
 });
 
@@ -56,8 +56,8 @@ $("#top, .logo, #footer_top").click(function () {
 
 // Copy Ip Function
 
-$(".copied_ip").hide();
 $(".copy").click(function () {
+  $(".copied_ip").css( "display", "flex" );
   $(".copied_ip").fadeIn(200, function () {
     $(".copied_ip").delay(2000).fadeOut(200);
   });
@@ -66,11 +66,8 @@ $(".copy").click(function () {
 // Copy To Clipboard Function
 new Clipboard('.copy');
 
-// Staff Image Rotate Function
+// Mobile Menu Function
 
-$(".staff_member").mouseover(function () {
-  $(this).find("img").toggleClass("look");
-})
-.mouseout(function () {
-  $(this).find("img").toggleClass("look");
+$(".mobile_header").click(function () {
+  $(".mobile_menu_list").toggleClass("mobile_menu_list_open");
 });

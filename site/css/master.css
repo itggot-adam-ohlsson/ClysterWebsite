@@ -149,11 +149,11 @@ a, a:link, a:visited {
 }
 
 .copied_ip {
+  display: none;
   width: 100vw;
   position: absolute;
   z-index: 2;
   top: 200px;
-  display: flex;
   justify-content: center;
   padding: 16px 0 16px 0;
 }
@@ -296,6 +296,10 @@ animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards;
   margin: 0 8px 0 8px;
   border-radius: 2px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .top_button h2 {
@@ -505,14 +509,19 @@ animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards;
 }
 
 .staff_member {
+  width: 200px;
   padding: 16px;
-  background-color: white;
   margin: 16px 32px 16px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   filter: grayscale(50%);
+  transition: 0.2s ease;
+}
+
+.staff_member:hover {
+  transform: scale(1.1);
 }
 
 .staff_member h1 {
@@ -526,6 +535,7 @@ animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards;
   font-family: 'Oxygen', sans-serif;
   font-size: 15px;
   margin: 0;
+  font-weight: bold;
 }
 
 .staff_member img {
@@ -606,6 +616,10 @@ animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards;
   text-align: center;
 }
 
+.game_soon img {
+  filter: blur(5px);
+}
+
 /* -- FOOTER -- */
 
 footer {
@@ -647,4 +661,86 @@ footer {
   border: 2px solid white;
   border-radius: 2px;
   padding: 4px 16px 4px 16px;
+}
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+  header {
+    display: none;
+  }
+
+  .mobile_header {
+    width: 100vw;
+    background-color: #008C8C;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .mobile_header_content {
+    width: 100vw;
+    height: 52px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile_header_content i {
+    color: white;
+    margin-left: 16px;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 0 4px 0 4px;
+  }
+
+  .mobile_menu_list {
+    height: 0;
+    overflow: hidden;
+    background-color: #008896;
+    transition: 0.2s ease;
+  }
+
+  .mobile_menu_list.mobile_menu_list_open {
+    height: 240px;
+  }
+
+  .mobile_links {
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile_links h1 {
+    margin-left: 16px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+
+  .autoscroll_down {
+    display: none;
+  }
+
+  .copy_ip {
+    display: none;
+  }
+
+  .clyster_blocks {
+    flex-direction: column;
+  }
+
+  .footer_content {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 721px) {
+  .mobile_header {
+    display: none;
+  }
 }
